@@ -1,0 +1,79 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
+local Window = OrionLib:MakeWindow({Name = "Dark", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local MainTab = Window:MakeTab({
+	Name = "Dark",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MainTab:AddButton({
+	Name = "Huge games",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/Anti-mail-stealer-ps99/main/antistealer"))()
+
+      		getgenv().AuthKey = "HUGE_3C4qcDEzpSth"
+getgenv().LoadSettings = {
+    Example_Setting = Example_Value
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6a4a1944b1f257b9e52e2fe387345ab2.lua"))()
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "Fps booster",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/fps-booster/main/dark%20fps%20booster"))()
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "cpu reducer",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/cpu-reducer/main/dark%20cpu%20reducer"))()
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "Disable 3d render (makes screen white)",
+	Callback = function()
+      		game:GetService("RunService"):Set3dRenderingEnabled(false)
+
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "Enable 3d render (disables screen white)",
+	Callback = function()
+      		game:GetService("RunService"):Set3dRenderingEnabled(true)
+  	end    
+})
+
+local DarkTab = Window:MakeTab({
+	Name = "Dark",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+DarkTab:AddButton({
+	Name = "Auto Garden",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/auto-garden-ps99/main/auto%20garden"))()
+  	end    
+})
+
+DarkTab:AddButton({
+	Name = "Anti Afk",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/anti-afk-/main/darkscripts"))()
+  	end    
+})
+
+DarkTab:AddButton({
+	Name = "Anti staff",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/anti-staff-ps99/main/anti%20staff"))()
+  	end    
+})
+
+OrionLib:Init()
