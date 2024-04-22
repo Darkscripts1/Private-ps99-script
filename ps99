@@ -90,6 +90,16 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
+	Name = "Last world tp",
+	Callback = function()
+      		while true do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11237.0615, 14.989316, 3886.54688, -0.999466658, 2.37487345e-08, 0.0326562971, 2.28396555e-08, 1, -2.82108417e-08, -0.0326562971, -2.74499357e-08, -0.999466658)
+    wait(3600)
+end
+  	end    
+})
+
+MainTab:AddButton({
 	Name = "cpu reducer",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Darks-scripts/cpu-reducer/main/dark%20cpu%20reducer"))()
