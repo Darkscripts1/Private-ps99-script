@@ -90,10 +90,10 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
-	Name = "Last world tp",
+	Name = "Last world tp 1",
 	Callback = function()
       		while true do
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11237.0615, 14.989316, 3886.54688, -0.999466658, 2.37487345e-08, 0.0326562971, 2.28396555e-08, 1, -2.82108417e-08, -0.0326562971, -2.74499357e-08, -0.999466658)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11067.8779, 15.6014004, 5871.07373, -7.2250528e-14, 7.39019583e-08, -1, 3.64066572e-08, 1, 7.39019583e-08, 1, -3.64066572e-08, -7.4941057e-14)
     wait(3600)
 end
   	end    
