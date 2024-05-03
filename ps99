@@ -148,4 +148,38 @@ DarkTab:AddButton({
   	end    
 })
 
+local KeyTab = Window:MakeTab({
+	Name = "key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+KeyTab:AddButton({
+	Name = "cystal key combine",
+	Callback = function()
+      		while true do
+    local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("CrystalKey_Combine"):InvokeServer(unpack(args))
+    wait()
+end
+  	end    
+})
+
+KeyTab:AddButton({
+	Name = "secret key combine",
+	Callback = function()
+      		while true do
+    local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("SecretKey_Combine"):InvokeServer(unpack(args))
+    wait()
+end
+  	end    
+})
+
 OrionLib:Init()
